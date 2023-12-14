@@ -197,7 +197,6 @@ address {
 /* Introduction  section */
 .intro {
   background: #2e2f42;
-
   padding: 188px 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -208,7 +207,7 @@ address {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/background/background.jpg);
+    url(../images/background/background.jpg);
 }
 
 .intro-container {
