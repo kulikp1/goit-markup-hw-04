@@ -196,8 +196,6 @@ address {
 
 /* Introduction  section */
 .intro {
-  background: var(--NAVY-BLUE, #2e2f42);
-
   padding: 188px 0;
   background-repeat: no-repeat;
   background-position: center;
