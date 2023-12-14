@@ -191,13 +191,26 @@ address {
 .nav-link {
   display: block;
   padding: 24px 0;
+  position: relative;
 }
 
 /* Introduction  section */
 .intro {
   background: var(--NAVY-BLUE, #2e2f42);
+  background-image: url();
   padding: 188px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 188px 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/background1.jpg);
 }
+
 .intro-container {
   display: flex;
   flex-direction: column;
@@ -258,6 +271,23 @@ address {
   letter-spacing: 0.32px;
 }
 
+.box-img {
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  background: var(--CLOUD, #f4f4fd);
+  margin-bottom: 8px;
+  position: relative;
+}
+.box-img svg {
+  position: absolute;
+  top: 24px;
+  left: 100px;
+  bottom: 24px;
+  right: 100px;
+}
 /* Section two */
 
 .team {
@@ -303,6 +333,40 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  margin-bottom: 8px;
+}
+/* Social (fb,inst...) */
+.reviews-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.reviews-elem {
+  width: 40px;
+  height: 40px;
+}
+
+.reviews-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+
+  color: #f4f4fd;
+}
+
+.reviews-icon {
+  fill: currentColor;
+}
+
+.reviews-link:hover,
+.reviews-link:focus {
+  background-color: #404bbf;
 }
 
 /* Section three  */
@@ -389,4 +453,73 @@ footer {
 }
 .footer-main {
   padding: 100px 0;
+}
+
+.footer-media-title {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+
+.footer-items {
+  display: flex;
+}
+
+.footer-description {
+  margin-right: 120px;
+}
+
+/* Social media style */
+.reviews-items-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.reviews-elem-footer {
+  width: 40px;
+  height: 40px;
+}
+
+.reviews-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+
+  color: #f4f4fd;
+}
+
+.reviews-icon-footer {
+  fill: currentColor;
+}
+
+.reviews-link-footer:hover,
+.reviews-link-footer:focus {
+  background-color: #31d0aa;
+}
+
+.nav-link.current:hover,
+.nav-link.current:focus,
+.nav-link.current {
+  color: #404bbf;
+}
+.nav-link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
