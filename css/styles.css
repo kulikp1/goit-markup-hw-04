@@ -235,6 +235,7 @@ address {
     ),
     url(../images/background/background.jpg);
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .intro-container {
@@ -299,7 +300,6 @@ address {
 }
 
 .box-img {
-  width: 264px;
   height: 112px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -309,7 +309,6 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
 }
 .box-img svg {
   width: 64px;
