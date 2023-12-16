@@ -234,6 +234,7 @@ address {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/background/background.jpg);
+  max-width: 1440px;
 }
 
 .intro-container {
@@ -257,7 +258,7 @@ address {
   min-width: 169px;
   height: 56px;
   border: none;
-  transition: background 300ms ease-in-out;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .intro-btn:hover,
 .intro-btn:focus {
