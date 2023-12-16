@@ -510,6 +510,9 @@ footer {
   padding: 100px 0;
 }
 
+.footer-media {
+  margin-right: 120px;
+}
 .footer-media-title {
   color: #fff;
   font-family: Roboto;
@@ -522,6 +525,7 @@ footer {
 
 .footer-items {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-description {
