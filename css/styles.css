@@ -370,6 +370,12 @@ address {
   gap: 24px;
 }
 
+.reviews-elem {
+  width: 40px;
+  height: 40px;
+  gap: 16px;
+}
+
 .reviews-link {
   display: flex;
   align-items: center;
